@@ -17,7 +17,7 @@ export const store = createStore(history);
 render(
     <Provider store={store}>
     <ConnectedRouter history={history}>
-    <App />
+    <App/>
     </ConnectedRouter>
     </Provider>,
     document.getElementById('root'),
