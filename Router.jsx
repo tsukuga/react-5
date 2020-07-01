@@ -1,16 +1,16 @@
 import React from 'react';
-import {Route, Switch} from "react-router";
+import {Route, Switch,BrowserRouter} from "react-router";
 
-import {Ello} from './templates/Ello'
-import {App} from './App'
+import Ello from '../Ello'
 
 
 const Router = () => {
     return (
+      <BrowserRouter>
         <Switch>
-            <Route exact path="/signin" component={Ello} />
-            <Route exact path="/sign" component={App} />
+            <Route exact path="/sign" component={Ello} />
         </Switch>
+      </BrowserRouter>
     );
 };
 

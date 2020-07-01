@@ -4,9 +4,6 @@ import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'connected-react-router';
 import * as History from 'history';
 import createStore from './reducks/store/store';
-import * as serviceWorker from './serviceWorker';
-import {ErrorBoundary} from "./components/UIkit";
-import {MuiThemeProvider} from '@material-ui/core/styles';
 import App from './App';
 
 import Draggable from './Hello';
@@ -24,4 +21,4 @@ render(
     document.getElementById('root'),
 )
 
-render(<App />, document.getElementById('root'));
+
