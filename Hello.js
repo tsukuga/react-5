@@ -1,5 +1,6 @@
 import React, {useState,useEffect} from 'react';
 import {Rnd} from 'react-rnd'
+import {useDispatch, useSelector} from "react-redux";
 import './style.css';
 
 const Draggable = () =>{
