@@ -1,6 +1,8 @@
 import React, {useState,useEffect} from 'react';
-import {Rnd} from 'react-rnd'
+import {copy} from "./reducks/users/operations";
 import {useDispatch, useSelector} from "react-redux";
+
+import {Rnd} from 'react-rnd'
 import './style.css';
 
 const Draggable = () =>{
@@ -18,6 +20,8 @@ const Draggable = () =>{
       visible: false
     }
   )
+
+  const dispatch = useDispatch();
 
   useEffect(()=>{console.log(infos),console.log(styles)},[infos,styles])
 
@@ -48,6 +52,7 @@ const Draggable = () =>{
         <ChangeStyle elementName="center" element={()=>setStyle({...styles,textAlign:"center"})}/>
         <ChangeStyle elementName="right"  element={()=>setStyle({...styles,textAlign:"right"})}/>
         <ChangeStyle elementName="B"      element={()=>setStyle({...styles,fontWeight:"bold"})}/>
+
 
     </>
   )
