@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch, HashRouter } from "react-router-dom";
+import { Route, Switch, HashRouter } from "react-router";
 import Ello from './templates/Ello'
 
 const Router = () => {
