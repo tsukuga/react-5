@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.0597ce74.css","mappings":"AAAA,KACE,gBACF,CAEA,KAEE,qBAAyB,CADzB,qBAAsB,CAEtB,UACF","sources":["style.css"],"sourcesContent":["h1, p {\n  font-family: Lato;\n}\n\n.box{\n  border: solid 1px #ddd;\n  background-color: #ffffff;\n  opacity: 0.7;\n}\n"],"names":[],"sourceRoot":""}
