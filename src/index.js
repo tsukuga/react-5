@@ -1,12 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'connected-react-router';
 import * as History from 'history';
-import createStore from '../reducks/store/store';
+import createStore from './reducks/store/store';
 import App from './App';
-
-import '../style.css';
+import './style.css';
 
 const history = History.createBrowserHistory();
 export const store = createStore(history);
