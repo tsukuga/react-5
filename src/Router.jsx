@@ -1,13 +1,15 @@
 import React from 'react';
-import {Route, Switch,BrowserRouter} from "react-router";
+import { Route, Switch, HashRouter } from "react-router-dom";
 import Ello from './templates/Ello'
 
 const Router = () => {
     return (
-        <Switch>
-            <Route exact path="/" component={Ello} />
-            <Route exact path="/d" component={Ello} />
-        </Switch>
+        <HashRouter>
+            <Switch>
+                <Route exact path="/" component={Ello} />
+                <Route exact path="/d" component={Ello} />
+            </Switch>
+        </HashRouter>
     );
 };
 
