@@ -4,21 +4,15 @@
   "private": true,
   "homepage": "https://tsukuga.github.io/react-5",
   "dependencies": {
-    "connected-react-router": "6.8.0",
     "gh-pages": "^5.0.0",
-    "history": "4.10.1",
-    "immutable": "4.0.0-rc.12",
-    "material": "^0.4.3",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-redux": "7.2.0",
     "react-rnd": "10.1.10",
     "react-router": "5.2.0",
+    "react-router-dom": "5.2.0",
     "redux": "4.0.5",
-    "redux-logger": "^4.0.0",
-    "redux-thunk": "^2.3.0",
-    "reselect": "^4.0.0",
-    "seamless-immutable": "7.1.4"
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "start": "react-scripts start",

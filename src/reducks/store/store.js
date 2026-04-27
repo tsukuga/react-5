@@ -1,23 +1,12 @@
-import {
-  createStore as reduxCreateStore,
-  combineReducers,
-  applyMiddleware
-} from 'redux';
-import { createLogger } from 'redux-logger'
+import { createStore as reduxCreateStore, combineReducers, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
-import {connectRouter, routerMiddleware} from 'connected-react-router'
-import {InfosReduer} from '../infos/reducers';
+import { InfosReduer } from '../infos/reducers';
 
-export default function createStore(history) {
-    let middleWares = [routerMiddleware(history), thunk];
-    
+export default function createStore() {
     return reduxCreateStore(
         combineReducers({
-          infos: InfosReduer,
-          router: connectRouter(history), 
+            infos: InfosReduer,
         }),
-        applyMiddleware(
-            ...middleWares
-        )
+        applyMiddleware(thunk)
     );
 }
